@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle</title>
+</head>
+<body>
+    <style>
+        body {
+            background: url("https://media.giphy.com/media/7YCBnmV8zHyhhOBNoP/giphy.gif");
+        }
+    </style>
+    <script>
+        alert("Merabaa, ben bazen boyle kucuk oyunlar oynamayi seviyorum, farklilik oluyor.\nBuraya bir bulmaca birakiyorum senin icin.\n Cevabi alta yazabilirsin :D \n Direk cevabi gorup gecmek icin skip yazabilirsin.");
+        while (true){
+            var answer = prompt("Onu ne kadar kovalarsan bulma ihtimalin o kadar azalir. \n |.|.|.|.|.|.|.|.| \nBuraya cevabi gir");
+            if (answer.toLocaleLowerCase === "mutluluk") {
+                alert("Tebrik ediyorum. Simdi bunun benim icin en zevkli kismina geldik hic bunla ugrasmayip direk siteye girsen de zaten gorebilirdin :D \n (Okaye bastiktan sonra 5 saniye beklemen lazim)");
+                break;
+            } else if (answer === "skip") {
+                alert("Gercekten boyle bir secenek koymus oldugumu dusunmus olamazsin :D");
+            } else {
+                alert("nope...");
+            }
+        }
+        var delayInMilliseconds = 5000; //5 second
+        setTimeout(function() {
+            window.location.replace("https://sites.google.com/view/gecikmisbulusma/sophies-choice");
+            }, delayInMilliseconds);
+    </script>
+</body>
+</html>
